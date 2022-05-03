@@ -29,7 +29,7 @@ class StaticServer {
       if(err) {
         this.resErr(err, res)
       }else {
-        let content = `<h1>当前位于${path}目录中</h1>`
+        let content = `<h1>当前位于${pathname}目录中</h1>`
         files.forEach(file => {
           if(!config.ignore.includes(file.charAt(0))) {
             const link = path.join(pathname, file)
